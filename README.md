@@ -1,6 +1,6 @@
 # @sgtpooki/helia-verified-fetch-cli
 
-`@sgtpooki/helia-verified-fetch-cli` is a command-line interface tool designed to facilitate the download and fetching of content using the Helia protocol and `@helia/verified-fetch`. It leverages various block brokers such as bitswap and trustless gateways to ensure secure and efficient data retrieval.
+`@sgtpooki/helia-verified-fetch-cli` is a command-line interface tool designed to facilitate the download and fetching of content using the javascript IPFS implementation,  [Helia](https://github.com/ipfs/helia), and [`@helia/verified-fetch`](https://github.com/ipfs/helia-verified-fetch/tree/main/packages/verified-fetch). It leverages various block brokers such as bitswap and trustless gateways to ensure secure and efficient data retrieval.
 
 ## Installation
 
