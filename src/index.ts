@@ -7,6 +7,7 @@ import debug from 'debug'
 import { createHelia, type BlockBroker, type HeliaInit } from 'helia'
 import { hideBin } from 'yargs/helpers'
 import yargs from 'yargs/yargs'
+import { contentTypeParser } from './content-type-parser.js'
 
 // TODO: fix top level await issue with esbuild
 void yargs(hideBin(process.argv))
@@ -64,12 +65,12 @@ void yargs(hideBin(process.argv))
       debug.enable('helia:*')
     }
     const helia = await createHelia(getHeliaOptions(argv))
-    const fetch = await createVerifiedFetch(helia)
+    const fetch = await createVerifiedFetch(helia, { contentTypeParser })
     const response = await fetch(argv.resource, getFetchOptions(argv))
-    // TODO: fix pipeable json
     const contentType = response.headers.get('Content-Type')
     if (contentType != null) {
       if (contentType.includes('json')) {
+        // TODO: fix pipeable json
         const json = await response.json()
         process.stdout.write(JSON.stringify(json, null, 2))
         process.exit(0)
