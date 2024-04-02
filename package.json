@@ -2,6 +2,9 @@
   "name": "@sgtpooki/helia-verified-fetch-cli",
   "version": "1.0.0",
   "description": "A simple CLI for downloading IPFS content using @helia/verified-fetch",
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/SgtPooki/helia-verified-fetch-cli#readme",
   "repository": {
     "type": "git",
