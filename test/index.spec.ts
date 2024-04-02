@@ -1,4 +1,4 @@
-import {expect} from 'aegir/chai'
+import { expect } from 'aegir/chai'
 
 describe('TODO', () => {
   it('has no tests yet', () => {
