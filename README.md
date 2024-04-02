@@ -23,8 +23,13 @@ To fetch a resource, simply provide the resource URL as follows:
 This example shows how you can fetch a "hello world" CID from peers using bitswap. (note that `-t false` is disabling trustless gateway usage)
 
 ```
-npm i -g @sgtpooki/helia-verified-fetch-cli
 helia-verified-fetch-cli ipfs://bafkqaddimvwgy3zao5xxe3debi --debug 'helia*,helia*:trace' --data ~/tmp/hvf-data -t false
+```
+
+### XKCD image example
+
+```
+helia-verified-fetch-cli 'ipfs://QmdmQXB2mzChmMeKY47C43LxUdg1NDJ5MWcKMKxDu7RgQm/1 - Barrel - Part 1/1 - Barrel - Part 1.png' --data ~/tmp/hvf-data > file.png && open file.png
 ```
 
 ## Options
