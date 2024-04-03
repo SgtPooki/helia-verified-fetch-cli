@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/SgtPooki/helia-verified-fetch-cli/compare/v1.0.0...v1.1.0) (2024-04-03)
+
+
+### Features
+
+* explicit semver bump ([5696b01](https://github.com/SgtPooki/helia-verified-fetch-cli/commit/5696b0109246e9de556edaf5c95bac382c5c43bb))
+
 ## 1.0.0 (2024-04-02)
 
 
