@@ -125,7 +125,7 @@
   "author": "Russell Dempsey <1173416+SgtPooki@users.noreply.github.com>",
   "license": "MIT",
   "devDependencies": {
-    "aegir": "^42.2.5"
+    "aegir": "^45.0.9"
   },
   "dependencies": {
     "@helia/block-brokers": "^2.0.3",
